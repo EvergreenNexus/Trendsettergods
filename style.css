@@ -25,7 +25,7 @@ img{
   flex-direction: column;
   text-align: center;
 
-  display: flex; /* so child elements can use flexbox stuff too! */
+  display: flex;
 }
 
 .product-card h5, h6{
@@ -34,9 +34,7 @@ img{
 .product-image img {
   max-width: 100%;
 }
-.product-info {
-  margin-top: auto;
-}
+
 @media (max-width: 920px) {
   .product-card {
     flex: 1 21%;
