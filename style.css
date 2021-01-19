@@ -1,3 +1,29 @@
+body{
+  font-family: 'Bebas Neue', cursive;
+}
+
+header img{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+navbar{
+  display: flex;
+  justify-content: center;
+  opacity: 100%;
+}
+
+navbar a{
+  font-size: large;
+  text-decoration: none;
+  margin: 2px;
+}
+
+
+
 img{
   max-width: 100%;
 }
