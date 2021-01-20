@@ -23,25 +23,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/form.css" >
+    <script src="/form.js"></script>
+    <script src="/sort.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-
-</head>
+  </head>
 <body>
+  <div class="topbar">
+    Welcome to TrendSetter Gods, Your Plug For The Rarest Sneakers In The World!
+  </div>
+  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="1000" id="bs-carousel">
+    <!-- Overlay -->
+
+
+  
+
+    <!-- Wrapper for slides -->
+
+    <div class="carousel-inner">
+      <div class="item slides active">
+        <div class="slide-1"></div>
+        <div class="hero">
+          <hgroup>
+            <header>
+              <img src="pics/logos/TSG_fulllogo_noborder.png">
+            </header>
+            <navbar>
+              <a href="/" class="btn" id="nav">Home</a>
+              <a href="#mens" class="btn" id="nav">Men's</a>
+              <a href="#womens" class="btn" id="nav">Women's</a>
+              <a href="#youth" class="btn" id="nav">Youth</a>
+              <a href="/" class="btn" id="nav">News</a>
+              <a href="https://www.facebook.com/trendsetter.jesus" target="_blank"><img width="30" height="30" style="padding: 5px;" src="pics/logos/facebooksml.png"></a>
+              <a href="https://www.instagram.com/trendsettergods/" target="_blank"><img width="30" height="30" style="padding: 5px;" src="pics/logos/instagramsml.png"></a>
+            </navbar>
+          </hgroup>
+        </div>
+      </div>
+
+      <div class="item slides">
+        <div class="slide-2"></div>
+        <div class="hero">        
+            <hgroup>
+              <header>
+                <img src="pics/logos/TSG_fulllogo_noborder.png">
+              </header>
+            
+            <navbar>
+                <a href="/" class="btn" id="nav">Home</a>
+                <a href="#mens" class="btn" id="nav">Men's</a>
+                <a href="#womens" class="btn" id="nav">Women's</a>
+                <a href="#youth" class="btn" id="nav">Youth</a>
+                <a href="/" class="btn" id="nav">News</a>
+            </navbar>
+            </hgroup>       
+        </div>
+      </div>
+
+      <div class="item slides">
+        <div class="slide-3"></div>
+          <div class="hero">        
+            <hgroup>
+              <header>
+                <img src="pics/logos/TSG_fulllogo_noborder.png">
+              </header>
+              
+              <navbar>
+                <a href="/" class="btn" id="nav">Home</a>
+                <a href="#" class="btn" id="nav">Men's</a>
+                <a href="#" class="btn" id="nav">Women's</a>
+                <a href="#" class="btn" id="nav">Youth</a>
+                <a href="/" class="btn" id="nav">News</a>
+              </navbar>
+            </hgroup>
+          </div>
+      </div>
+    </div> 
+  </div>
     
-    <header>
-        <img src="pics/logos/TSG_fulllogo_noborder.png">
-    </header>
-    
-    <navbar>
-        <a href="/" class="btn" id="nav">Home</a>
-        <a href="/" class="btn" id="nav">Men's</a>
-        <a href="/" class="btn" id="nav">Women's</a>
-        <a href="/" class="btn" id="nav">Youth</a>
-        <a href="/" class="btn" id="nav">News</a>
-    </navbar>
-    
+    <!--
+
+      Fucking filter doesn't work
+
     <nav class="product-filter">
 
         <h1>All Products</h1>
@@ -59,9 +128,9 @@
             <label>Sort by:</label>
             <select>
               <option value="/">Featured</option>
-              <option value="mens">Mens</option>
-              <option value="womens">Womens</option>
-              <option value="youth">Youth</option>
+              <option value="1">Mens</option>
+              <option value="2">Womens</option>
+              <option value="3">Youth</option>
             </select>
           </div>
       
@@ -69,12 +138,17 @@
       
       </nav>
 
-      <section class="products">
+      -->
+
+      <div style="padding: 2%;"></div>
+      <div class="wrap">
+      <div class="products-mens" data-order="1">
 
         <!-- It's likely you'll need to link the card somewhere. You could add a button in the info, link the titles, or even wrap the entire card in an <a href="..."> -->
          
         
         <!-- Mens -->
+        <h4 style="padding-left: 5px;">Mens ></h4>
         <div class="mens product-card">
           <div class="product-image">
             <img src="pics/resized/Nike Air Jordan 12 Black University Gold Black.jpg">
@@ -668,11 +742,13 @@
               <h6>Contact For Price</h6>
             </div>
           </div>
-
-
-        <!-- Womens -->
+      </div>
+      <div style="padding: 2%;"></div>
       
-        <div class="womens product-card">
+      <!-- Womens -->
+      <div class="products-womens" data-order="2">
+        <h4 style="padding-left: 5px;">Womens ></h4>
+        <div class="womens product-card" id="womens">
           <div class="product-image">
             <img src="pics/resized/WAir Jordan 11 Retro Low WhiteBlackConcord.jpg">
           </div>
@@ -682,7 +758,7 @@
             <h6>Contact For Price</h6>
           </div>
         </div>
-
+        
         <div class="womens product-card">
           <div class="product-image">
             <img src="pics/resized/WMNS Air Jordan 8 Retro LowDark CinderChampagne-Sail.jpg">
@@ -748,10 +824,13 @@
             <h6>Contact For Price</h6>
           </div>
         </div>
-
-        <!-- Youth -->
-
-        <div class="youth product-card">
+      </div>
+      <div style="padding: 2%;"></div>
+      
+      <!-- Youth -->
+      <div class="products-youth" data-order="3">
+        <h4 style="padding-left: 5px;">Youth ></h4>
+        <div class="youth product-card" id="youth">
           <div class="product-image">
             <img src="pics/resized/Air Jordan 3 Retro OG DK Purple DustAtomic Pink.jpg">
           </div>
@@ -850,6 +929,56 @@
           </div>
         </div>
 
-      </section>
+      </div>
+    </div>
+      <div class="container">
+        <!-- Form Started -->
+        <h2 style="text-align: center;">Contact us to order today!</h2>
+        <div class="container form-top">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                    <div class="panel panel-danger">
+                        <div class="panel-body">
+                            <form id="reused_form">
+                                <div class="form-group">
+                                    <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                                    <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="fa fa-comment" aria-hidden="true"></i> Shoe Title / Size / Any Other Questions</label>
+                                    <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-raised btn-block btn-danger">Post &rarr;</button>
+                                </div>
+                            </form>
+                            <div id="error_message" style="width:100%; height:100%; display:none; ">
+                                <h4 style="text-align: center;">
+                                    Error
+                                </h4>
+                                Sorry there was an error sending your form. 
+                            </div>
+                            <div id="success_message" style="width:100%; height:100%; display:none; ">
+                              <h2 style="text-align: center;">We Will Be In Contact Shortly. Thank You.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Form Ended -->
+    </div>
+    <div class="footer" oncontextmenu="return false;">
+  
+      <a href="https://www.facebook.com/trendsetter.jesus" target="_blank"><img class ="footerlogo" src="pics/logos/facebooksml.png"></a>
+      <a href="https://www.instagram.com/trendsettergods/" target="_blank"><img class = "footerlogo" src="pics/logos/instagramsml.png"></a>
+
+      <p class="text-center footertext"><strong>© 2021 Trendsetter Gods - All Rights Reserved</strong></p>
+      <p class="text-center footertext">Website Designed by Evergreen Nexus Media Group</p>
+   </div>
   </body>
 </html>
