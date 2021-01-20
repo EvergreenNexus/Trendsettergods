@@ -4,9 +4,8 @@ html, body{
 
 .topbar {
   background-color: #333;
-  overflow: hidden;
+  text-align: center;
   color: white;
-  display: flex;
   flex-grow: 1;
   font-size: 18px;
 }
@@ -80,19 +79,19 @@ opacity: 1;
 
 .fade-carousel .carousel-inner .item .hero {
   opacity: 0;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s; 
-      -ms-transition: 2s all ease-in-out .1s; 
-       -o-transition: 2s all ease-in-out .1s; 
-          transition: 2s all ease-in-out .1s; 
+  -webkit-transition: 1s all ease-in-out .1s;
+     -moz-transition: 1s all ease-in-out .1s; 
+      -ms-transition: 1s all ease-in-out .1s; 
+       -o-transition: 1s all ease-in-out .1s; 
+          transition: 1s all ease-in-out .1s; 
 }
 .fade-carousel .carousel-inner .item.active .hero {
   opacity: 1;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s; 
-      -ms-transition: 2s all ease-in-out .1s; 
-       -o-transition: 2s all ease-in-out .1s; 
-          transition: 2s all ease-in-out .1s;    
+  -webkit-transition: 1s all ease-in-out .1s;
+     -moz-transition: 1s all ease-in-out .1s; 
+      -ms-transition: 1s all ease-in-out .1s; 
+       -o-transition: 1s all ease-in-out .1s; 
+          transition: 1s all ease-in-out .1s;    
 }
 
 /********************************/
@@ -126,10 +125,10 @@ position: relative;
 background-image:  linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url(/pics/bg/shoeboxhero.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url(/pics/bg/shoeboxhero.jpg);
+background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url(/pics/bg/shoeshero.jpg);
 }
 .fade-carousel .slides .slide-3 {
-background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url(/pics/bg/shoeboxhero.jpg);
+background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url(/pics/bg/shoewallhero.jpg);
 }
 
 /********************************/
